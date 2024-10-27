@@ -6,11 +6,15 @@
             <hr />
         </div>
     </div>
-    <div class="row justify-content-center align-content-center">
-        <div class="col-md-8">
+    <div class="row">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="id" class="form-label">Id (Update/Delete/Search)</label>
+                            <asp:TextBox runat="server" ID="id" type="text" class="form-control" placeholder="Employee Id"></asp:TextBox>
+                        </div>
                         <div class="col-md-6">
                             <label for="firstName" class="form-label">First Name</label>                            
                             <asp:TextBox runat="server" ID="firstName" type="text" class="form-control" placeholder="First Name"></asp:TextBox>
@@ -32,22 +36,24 @@
                             <asp:TextBox runat="server" ID="room" type="text" class="form-control" placeholder="Room"></asp:TextBox>
                         </div>
                         <div class="col-12">
-                            <asp:Button runat="server" Text="Button" OnClick="OnSaveEmployee" 
+                            <asp:Button runat="server" Text="Save" OnClick="OnSaveEmployee" 
                                 class="btn btn-sm btn-outline-success">
-                           </asp:Button>                    
+                           </asp:Button> 
+                            <asp:Button runat="server" Text="Update" OnClick="OnUpdateEmployee"
+                                class="btn btn-sm btn-outline-success">
+                            </asp:Button>
+                            <asp:Button runat="server" Text="Delete" OnClick="OnDeleteEmployee"
+                                class="btn btn-sm btn-outline-danger">
+                            </asp:Button>
+                            <asp:Button runat="server" Text="Search" OnClick="OnSearchEmployee"
+                                class="btn btn-sm btn-outline-info">
+                            </asp:Button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <%--<div class="row justify-content-center align-content-center mt-5">
-        <div class="col-md-8">
-            <asp:GridView runat="server" ID="employeeGridView"></asp:GridView>
-        </div>
-    </div>--%>
-    <div class="row justify-content-center align-content-center mt-5">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <asp:GridView runat="server" ID="employeeGridView" CssClass="custom-grid" AutoGenerateColumns="False">
                 <Columns>
                     <asp:TemplateField HeaderText="Id">

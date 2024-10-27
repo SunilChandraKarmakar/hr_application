@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|solutionrelative:hrapplication\\bundle.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|d:\\hr_application\\hrapplication\\hrapplication\\content\\css.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|solutionrelative:hrapplication\\content\\css.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|d:\\hr_application\\hrapplication\\hrapplication\\employee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|solutionrelative:hrapplication\\employee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|d:\\hr_application\\hrapplication\\hrapplication\\employee.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|solutionrelative:hrapplication\\employee.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|d:\\hr_application\\hrapplication\\hrapplication\\employee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C5EFA7-B6B5-4534-A2F6-333C085766B1}|HRApplication\\HRApplication.csproj|solutionrelative:hrapplication\\employee.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 25,
-          "SelectedChildIndex": 42,
+          "SelectedChildIndex": 41,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,41 +190,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "css.css",
-              "DocumentMoniker": "D:\\hr_application\\HRApplication\\HRApplication\\Content\\css.css",
-              "RelativeDocumentMoniker": "HRApplication\\Content\\css.css",
-              "ToolTip": "D:\\hr_application\\HRApplication\\HRApplication\\Content\\css.css",
-              "RelativeToolTip": "HRApplication\\Content\\css.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-27T17:45:11.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Bundle.config",
               "DocumentMoniker": "D:\\hr_application\\HRApplication\\HRApplication\\Bundle.config",
               "RelativeDocumentMoniker": "HRApplication\\Bundle.config",
               "ToolTip": "D:\\hr_application\\HRApplication\\HRApplication\\Bundle.config",
               "RelativeToolTip": "HRApplication\\Bundle.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-27T17:43:48.022Z",
+              "WhenOpened": "2024-10-27T18:36:54.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Employee.aspx.cs",
               "DocumentMoniker": "D:\\hr_application\\HRApplication\\HRApplication\\Employee.aspx.cs",
               "RelativeDocumentMoniker": "HRApplication\\Employee.aspx.cs",
               "ToolTip": "D:\\hr_application\\HRApplication\\HRApplication\\Employee.aspx.cs",
               "RelativeToolTip": "HRApplication\\Employee.aspx.cs",
-              "ViewState": "AgIAADcAAACwmZmZmZkjwEkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAACAmZmZmZkjwBgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T16:52:55.154Z",
+              "WhenOpened": "2024-10-27T17:52:10.967Z",
               "EditorCaption": ""
             },
             {
@@ -241,7 +224,7 @@
               "RelativeToolTip": "HRApplication\\Employee.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-27T16:49:43.624Z",
+              "WhenOpened": "2024-10-27T17:50:31.058Z",
               "EditorCaption": ""
             }
           ]

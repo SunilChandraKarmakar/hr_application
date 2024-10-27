@@ -1,0 +1,21 @@
+﻿.custom-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-grid th, .custom-grid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-cell {
+    /*background-color: #f9f9f9;*/ 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-grid th {
+    background-color: #4CAF50;
+    color: white; 
+}
