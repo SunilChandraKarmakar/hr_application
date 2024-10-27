@@ -8,6 +8,19 @@
     </div>
     <div class="row">
         <div class="col-md-6">
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <label for="xmlFile" class="form-label">Upload XML File</label>
+                    <asp:FileUpload runat="server" class="form-control" ID="xmlFileUploder"></asp:FileUpload>
+                    <asp:Button runat="server" Text="Upload" OnClick="OnUploadXmlFile"
+                        class="btn btn-sm btn-outline-success mt-2">
+                    </asp:Button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
                     <div class="row g-3">

@@ -70,3 +70,7 @@ D:\hr_application\HRApplication\HRApplication\obj\Debug\HRApplication.csproj.Cor
 D:\hr_application\HRApplication\HRApplication\obj\Debug\HRApplic.BD5653F2.Up2Date
 D:\hr_application\HRApplication\HRApplication\obj\Debug\HRApplication.dll
 D:\hr_application\HRApplication\HRApplication\obj\Debug\HRApplication.pdb
+D:\hr_application\HRApplication\HRApplication\bin\EntityFramework.dll
+D:\hr_application\HRApplication\HRApplication\bin\EntityFramework.SqlServer.dll
+D:\hr_application\HRApplication\HRApplication\bin\EntityFramework.xml
+D:\hr_application\HRApplication\HRApplication\bin\EntityFramework.SqlServer.xml

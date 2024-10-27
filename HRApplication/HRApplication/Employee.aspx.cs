@@ -1,7 +1,10 @@
-﻿using System;
+﻿using HRApplication.Model;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Web.UI;
+using System.Xml.Linq;
 
 namespace HRApplication
 {
@@ -167,6 +170,52 @@ namespace HRApplication
 
             employeeGridView.DataSource = dataTable;
             employeeGridView.DataBind();
+        }
+
+        protected void OnUploadXmlFile(object sender, EventArgs e)
+        {
+            if(xmlFileUploder.PostedFile.ContentType.Equals("application/xml") ||
+                xmlFileUploder.PostedFile.ContentType.Equals("text/xml"))
+            {
+                var xmlPath = Server.MapPath("~/Content/" + xmlFileUploder.PostedFile.FileName);
+                xmlFileUploder.SaveAs(xmlPath);
+
+                var xDocument = XDocument.Load(xmlPath);
+
+                var employess = xDocument.Descendants("employee").Select(employee =>
+                    new EmployeeImport
+                    {
+                        Id = int.Parse(employee.Element("id").Value),
+                        FirstName = employee.Element("firstName").Value,
+                        LastName = employee.Element("lastName").Value,
+                        Division = employee.Element("division").Value,
+                        Building = employee.Element("building").Value,
+                        Room = employee.Element("room").Value
+                    }).ToList();
+
+                using(var hrAppDbEntities = new HRAppDbEntities())
+                {
+                    foreach (var employee in employess)
+                    {
+                        var em = hrAppDbEntities.Employees.Where(x => x.Id == employee.Id).FirstOrDefault();
+
+                        if (em != null)
+                        {
+                            em.Id = employee.Id;
+                            em.FirstName = employee.FirstName;
+                            em.LastName = employee.LastName;
+                            em.Division = employee.Division;
+                            em.Building = employee.Building;
+                            em.Room = employee.Room;
+                        }
+                        //else
+                            //hrAppDbEntities.Employees.Add(employee);
+
+                    }
+
+                    hrAppDbEntities.SaveChanges();
+                }
+            }
         }
     }
 }
